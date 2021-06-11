@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de CSS</title>
+    <title>Projeto Prático | Software Devs</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>
         Projeto Prático | Software Devs
@@ -15,29 +17,34 @@
         <div class="mydiv">
             <form action="">
                 <label for="nome">Nome</label><br>
-                <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome..." style="width: 300px;"><br><br>
+                <input type="text" name="nome" id="nome" class="input-text" placeholder="Coloque o seu nome..."><br><br>
+
                 <label for="email">E-mail</label><br>
-                <input type="email" name="email" id="email" placeholder="Coloque o seu Email..." style="width: 300px;"><br><br>
+                <input type="email" name="email" id="email" class="input-text" placeholder="Coloque o seu Email..."><br><br>
+
                 <label for="idade">Idade (opcional)</label><br>
-                <input type="number" name="idade" id="idade" placeholder="Idade..." style="width: 300px;"><br><br>
+                <input type="number" min="1" name="idade" id="idade" class="input-text" placeholder="Idade..."><br><br>
+
                 <label for="estado">Qual opção descreve melhor seu estado atual?</label><br>
-                <select name="estado" id="estado">
-                    <option value="selecione">Selecione a opção</option>
+                <select name="estado" id="estado" class="input-text">
+                    <option value="selecione" disabled selected>Selecione a opção</option>
                     <option value="estudando">Estudando</option>
                     <option value="clt">CLT</option>
                     <option value="nao-dizer">Prefiro não dizer</option>
                     <option value="outro">Outro</option>
                 </select>
                 <br><br>
-                Você recomenda esse projeto?<br>
-                <input type="radio" name="recomenda" id="certeza">
+
+                <label for="recomenda">Você recomenda esse projeto?</label><br>
+                <input type="radio" name="recomenda" id="certeza" checked>
                 <label for="recomenda">Com certeza</label><br>
                 <input type="radio" name="recomenda" id="talvez">
                 <label for="recomenda">Talvez</label><br>
                 <input type="radio" name="recomenda" id="nao-sei">
                 <label for="recomenda">Não sei</label><br>
                 <br>
-                <label for="melhoria">O que você gostaria de melhorar? (Selecione quantas quiser.)</label><br>
+
+                <label for="melhoria">O que você gostaria de melhorar? (Selecione quantas quiser)</label><br>
                 <input type="checkbox" name="tempo" id="tempo">
                 <label for="tempo">Ter mais tempo para estudar</label><br>
                 <input type="checkbox" name="gosto" id="gosto">
@@ -46,12 +53,16 @@
                 <label for="gerencia">Gerência de projetos</label><br>
                 <input type="checkbox" name="node" id="node">
                 <label for="node">NodeJS</label><br><br>
+
                 <label for="comentario">Algum comentário ou sugestão?</label><br>
-                <textarea name="comentario" id="comentario" cols="30" rows="8" placeholder="Insira seu comentário ou sugestão aqui..." style="width: 300px;"></textarea><br>
-                <input type="submit" value="Enviar" style="width: 306px; background-color: rgb(88, 175, 88);" >
+                <textarea name="comentario" id="comentario" class="input-text" cols="30" rows="8" placeholder="Insira seu comentário ou sugestão aqui..."></textarea><br>
+                <br>
+
+                <input type="submit" value="Enviar" id="input-submit">
             </form>
         </div>
     </section>
-    
+
 </body>
+
 </html>
