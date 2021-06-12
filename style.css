@@ -51,3 +51,7 @@ body {
 #comentario {
     height: 100px;
 }
+#obrigatorio{
+    font-size: 12px;
+    color: #888aa1;
+}
